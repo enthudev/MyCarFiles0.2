@@ -2,7 +2,7 @@
     Events
 
     <div repeat.for="event of events">
-        <compose model.bind="event" view-model="viewmodels/event"></compose>
+        <compose model.bind="viewmodels/event" view="views/event.html"></compose>
     </div>
     <div>
         <button type="button" click.trigger='createAndUseLazy()'>Use Lazy</button>
